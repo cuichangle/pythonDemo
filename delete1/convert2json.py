@@ -4,7 +4,7 @@ import codecs
 import io
 import os
 
-fileName = '4-12-test.csv'
+fileName = 'compoundData.csv'
 
 def row_count(filename):
     with open(filename) as in_file:
@@ -16,7 +16,7 @@ def length(obj):
 
 
 csvfile = open(fileName, 'r')
-jsonfile = open("4-12-test.json", 'w') # io.open('filename', 'w', encoding='utf8')
+jsonfile = open("compoundData.json", 'w') # io.open('filename', 'w', encoding='utf8')
 
 fieldnames = ("id", "name", "icon", "camp", "desc", "star", "storge")
 reader = csv.DictReader(csvfile, fieldnames)
