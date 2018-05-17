@@ -47,6 +47,5 @@ for row in reader:
         jsonfile.write('\n')
     else:
         jsonfile.write(',\n')
-    print '\n'
 
 jsonfile.write('}')
