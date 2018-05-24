@@ -40,7 +40,7 @@ for row in reader:
         column += 1
         jsonfile.write('\"' + item + "\":\"" + row[item] + "\"")
         if column == last_column_number:
-            jsonfile.write('}')
+            jsonfile.write(',\"package\":\"1\"}')
         else:
             jsonfile.write(',')
     if last_line_number == reader.line_num:
