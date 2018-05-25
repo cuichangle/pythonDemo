@@ -18,7 +18,7 @@ def length(obj):
 csvfile = open(fileName, 'r')
 jsonfile = open("openData.json", 'w') # io.open('filename', 'w', encoding='utf8')
 
-fieldnames = ("id", "name", "icon", "camp", "desc", "star", "storge")
+fieldnames = ("id", "name", "icon", "camp", "desc", "star", "storage")
 reader = csv.DictReader(csvfile, fieldnames)
 
 last_line_number = row_count(fileName)
